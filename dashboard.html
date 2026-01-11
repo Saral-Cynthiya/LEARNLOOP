@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard | LearnLoop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h2>LearnLoop Dashboard</h2>
+</nav>
+
+<div class="center">
+    <h3 id="welcome"></h3>
+    <p>Your learning progress overview</p>
+
+    <button onclick="goQuiz()">Take Assessment (20 Questions)</button>
+</div>
+
+<script>
+document.getElementById("welcome").innerText =
+    "Welcome, " + localStorage.getItem("learnloopUser") + " 👋";
+
+function goQuiz(){
+    window.location.href = "quiz.html";
+}
+</script>
+
+</body>
+</html>
